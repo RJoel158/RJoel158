@@ -96,6 +96,16 @@ Focused on high-velocity software engineering: leveraging **multi-agent AI workf
 
 ---
 
+### Live Presence & Activity
+
+<div align="center">
+  <a href="https://discord.com/users/521772325574541348">
+    <img src="https://lanyard.cnrad.dev/api/521772325574541348?theme=dark&bg=0d1117&borderRadius=8px&showDisplayName=true" alt="Live Presence: Spotify, Games & Coding Activity" />
+  </a>
+</div>
+
+---
+
 ### GitHub Activity & Analytics
 
 <div align="center">
@@ -131,6 +141,9 @@ Focused on high-velocity software engineering: leveraging **multi-agent AI workf
   </a>
   <a href="https://www.linkedin.com/in/ronald-joel-saavedra-vargas-b00845387/">
     <img src="https://img.shields.io/badge/LinkedIn-Ronald%20Joel%20Saavedra%20Vargas-0d1117?style=flat-square&logo=linkedin&logoColor=0A66C2" alt="LinkedIn Profile" />
+  </a>
+  <a href="https://discord.com/users/521772325574541348">
+    <img src="https://img.shields.io/badge/Discord-amazing158-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" />
   </a>
   <a href="mailto:ronaldjoelsaavedra@gmail.com">
     <img src="https://img.shields.io/badge/Email-ronaldjoelsaavedra%40gmail.com-0d1117?style=flat-square&logo=gmail&logoColor=EA4335" alt="Email" />
