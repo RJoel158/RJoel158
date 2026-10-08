@@ -1,19 +1,59 @@
-<div align="center">
+/**
+ * Joel.dev Portfolio & GitHub Customization Suite
+ * Complete Certified Software Engineer Profile with Seinen Manga Art & Animations
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  let currentUsername = 'RJoel158';
+
+  const usernameInput = document.getElementById('github-username-input');
+  const btnUpdateStats = document.getElementById('btn-update-stats');
+  const btnCopyReadme = document.getElementById('btn-copy-readme');
+  const btnCopyCodeDirect = document.getElementById('btn-copy-code-direct');
+  const copyBtnText = document.getElementById('copy-btn-text');
+  const markdownOutput = document.getElementById('markdown-output');
+  const toast = document.getElementById('toast');
+  const toastMessage = document.getElementById('toast-message');
+  const currentYearSpan = document.getElementById('current-year');
+  const emailCard = document.getElementById('contact-email-card');
+  const heroGithubLink = document.getElementById('hero-github-link');
+  const contactGithubLink = document.getElementById('contact-github');
+  const contactLinkedin = document.getElementById('contact-linkedin');
+
+  const imgStats = document.getElementById('img-stats');
+  const imgLangs = document.getElementById('img-langs');
+  const imgStreak = document.getElementById('img-streak');
+
+  if (usernameInput) {
+    usernameInput.value = currentUsername;
+  }
+
+  if (currentYearSpan) {
+    currentYearSpan.textContent = new Date().getFullYear();
+  }
+
+  if (contactLinkedin) {
+    contactLinkedin.href = 'https://www.linkedin.com/in/ronald-joel-saavedra-vargas-b00845387/';
+  }
+
+  function generateProfileMarkdown(username) {
+    const cleanUser = username.trim() || 'RJoel158';
+    return `<div align="center">
   <img src="./assets/manga_coder_banner.jpg" width="100%" alt="Software Engineer Workspace - Seinen Manga Aesthetic" style="border-radius: 10px; border: 1px solid #30363d;" />
   <br /><br />
-  <a href="https://github.com/RJoel158">
+  <a href="https://github.com/${cleanUser}">
     <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=25&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=750&height=70&lines=Hello%2C+I'm+Joel;Software+Engineer+%26+Computer+Science+Student;Full-Stack%2C+AI+Agents+%26+Cross-Platform+Systems;C%23+%7C+TypeScript+%7C+PHP+%2F+Laravel+%7C+Java" alt="Typing Header" />
   </a>
 </div>
 
 <p align="center">
-  <a href="https://github.com/RJoel158">
+  <a href="https://github.com/${cleanUser}">
     <img src="https://img.shields.io/badge/AI%20Engineering-Multi--Agent%20Workflows-0d1117?style=flat-square&logo=openai&logoColor=58a6ff" alt="AI Engineering" />
   </a>
-  <a href="https://github.com/RJoel158">
+  <a href="https://github.com/${cleanUser}">
     <img src="https://img.shields.io/badge/Core%20Stack-C%23%20%7C%20TS%20%7C%20PHP%20%7C%20Java-0d1117?style=flat-square&logo=dotnet&logoColor=58a6ff" alt="Core Stack" />
   </a>
-  <a href="https://github.com/RJoel158">
+  <a href="https://github.com/${cleanUser}">
     <img src="https://img.shields.io/badge/Focus-Cross--Platform%20%26%20Networking-0d1117?style=flat-square&logo=visualstudiocode&logoColor=58a6ff" alt="Focus" />
   </a>
 </p>
@@ -102,13 +142,13 @@ Focused on high-velocity software engineering: leveraging **multi-agent AI workf
   <table border="0">
     <tr>
       <td valign="top">
-        <a href="https://github.com/RJoel158">
-          <img src="https://github-readme-stats.vercel.app/api?username=RJoel158&show_icons=true&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9" alt="GitHub Stats" width="410" />
+        <a href="https://github.com/${cleanUser}">
+          <img src="https://github-readme-stats.vercel.app/api?username=${cleanUser}&show_icons=true&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9" alt="GitHub Stats" width="410" />
         </a>
       </td>
       <td valign="top">
-        <a href="https://github.com/RJoel158">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RJoel158&layout=compact&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" alt="Top Languages" width="350" />
+        <a href="https://github.com/${cleanUser}">
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=${cleanUser}&layout=compact&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" alt="Top Languages" width="350" />
         </a>
       </td>
     </tr>
@@ -116,8 +156,8 @@ Focused on high-velocity software engineering: leveraging **multi-agent AI workf
 
   <br />
 
-  <a href="https://github.com/RJoel158">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=RJoel158&theme=github_dark&hide_border=false&border=30363d&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakNum=c9d1d9" alt="GitHub Streak" width="770" />
+  <a href="https://github.com/${cleanUser}">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=${cleanUser}&theme=github_dark&hide_border=false&border=30363d&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakNum=c9d1d9" alt="GitHub Streak" width="770" />
   </a>
 </div>
 
@@ -126,8 +166,8 @@ Focused on high-velocity software engineering: leveraging **multi-agent AI workf
 ### Connect
 
 <p align="left">
-  <a href="https://github.com/RJoel158">
-    <img src="https://img.shields.io/badge/GitHub-RJoel158-0d1117?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+  <a href="https://github.com/${cleanUser}">
+    <img src="https://img.shields.io/badge/GitHub-${cleanUser}-0d1117?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
   </a>
   <a href="https://www.linkedin.com/in/ronald-joel-saavedra-vargas-b00845387/">
     <img src="https://img.shields.io/badge/LinkedIn-Ronald%20Joel%20Saavedra%20Vargas-0d1117?style=flat-square&logo=linkedin&logoColor=0A66C2" alt="LinkedIn Profile" />
@@ -135,4 +175,159 @@ Focused on high-velocity software engineering: leveraging **multi-agent AI workf
   <a href="mailto:ronaldjoelsaavedra@gmail.com">
     <img src="https://img.shields.io/badge/Email-ronaldjoelsaavedra%40gmail.com-0d1117?style=flat-square&logo=gmail&logoColor=EA4335" alt="Email" />
   </a>
-</p>
+</p>`;
+  }
+
+  function updateProfileView() {
+    const rawValue = usernameInput ? usernameInput.value.trim() : '';
+    currentUsername = rawValue.length > 0 ? rawValue : 'RJoel158';
+
+    if (markdownOutput) {
+      markdownOutput.textContent = generateProfileMarkdown(currentUsername);
+    }
+
+    if (imgStats) {
+      imgStats.src = `https://github-readme-stats.vercel.app/api?username=${encodeURIComponent(currentUsername)}&show_icons=true&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9`;
+    }
+    if (imgLangs) {
+      imgLangs.src = `https://github-readme-stats.vercel.app/api/top-langs/?username=${encodeURIComponent(currentUsername)}&layout=compact&theme=github_dark&hide_border=false&border_color=30363d&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9`;
+    }
+    if (imgStreak) {
+      imgStreak.src = `https://github-readme-streak-stats.herokuapp.com/?user=${encodeURIComponent(currentUsername)}&theme=github_dark&hide_border=false&border=30363d&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakNum=c9d1d9`;
+    }
+
+    if (heroGithubLink) {
+      heroGithubLink.href = `https://github.com/${encodeURIComponent(currentUsername)}`;
+    }
+    if (contactGithubLink) {
+      contactGithubLink.href = `https://github.com/${encodeURIComponent(currentUsername)}`;
+      const val = contactGithubLink.querySelector('.contact-val');
+      if (val) val.textContent = `github.com/${currentUsername}`;
+    }
+  }
+
+  updateProfileView();
+
+  if (btnUpdateStats) {
+    btnUpdateStats.addEventListener('click', () => {
+      updateProfileView();
+      showToast(`Updated for "${currentUsername}"`);
+    });
+  }
+
+  if (usernameInput) {
+    usernameInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        updateProfileView();
+        showToast(`Updated for "${currentUsername}"`);
+      }
+    });
+  }
+
+  let toastTimer = null;
+  function showToast(message) {
+    if (!toast || !toastMessage) return;
+    toastMessage.textContent = message;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toast.classList.remove('show');
+    }, 3000);
+  }
+
+  async function copyMarkdown() {
+    const markdown = generateProfileMarkdown(currentUsername);
+    try {
+      await navigator.clipboard.writeText(markdown);
+      showToast('Markdown copied to clipboard');
+      if (copyBtnText) {
+        const orig = copyBtnText.textContent;
+        copyBtnText.textContent = 'Copied';
+        setTimeout(() => {
+          copyBtnText.textContent = orig;
+        }, 2000);
+      }
+    } catch (err) {
+      const textarea = document.createElement('textarea');
+      textarea.value = markdown;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      showToast('Markdown copied');
+    }
+  }
+
+  if (btnCopyReadme) {
+    btnCopyReadme.addEventListener('click', copyMarkdown);
+  }
+  if (btnCopyCodeDirect) {
+    btnCopyCodeDirect.addEventListener('click', copyMarkdown);
+  }
+
+  if (emailCard) {
+    emailCard.addEventListener('click', async () => {
+      const email = 'ronaldjoelsaavedra@gmail.com';
+      try {
+        await navigator.clipboard.writeText(email);
+        showToast(`Copied: ${email}`);
+      } catch (err) {
+        showToast(email);
+      }
+    });
+  }
+
+  const tabs = document.querySelectorAll('.preview-tab');
+  const panels = document.querySelectorAll('.tab-panel');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+
+      tab.classList.add('active');
+      const targetId = tab.getAttribute('data-target');
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) {
+        targetPanel.classList.add('active');
+      }
+    });
+  });
+
+  const skillTabs = document.querySelectorAll('.skill-tab');
+  const skillCards = document.querySelectorAll('.skill-card');
+
+  skillTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      skillTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const filter = tab.getAttribute('data-filter');
+      skillCards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  const mobileToggle = document.getElementById('mobile-toggle');
+  const mainNav = document.getElementById('main-nav');
+
+  if (mobileToggle && mainNav) {
+    mobileToggle.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('open');
+      mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+});

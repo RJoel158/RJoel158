@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Joel - Estudiante de Tecnología y Desarrollador de Software. Proyectos, habilidades y generador de perfil de GitHub.">
+  <meta name="keywords" content="Joel, desarrollador, portfolio, github profile, software engineering, estudiante tecnologia">
+  <meta name="author" content="Joel">
+  <meta property="og:title" content="Joel | Software Developer & Tech Enthusiast">
+  <meta property="og:description" content="Portafolio profesional y proyectos destacados.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  
+  <title>Joel | Desarrollador de Software & Portafolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient background lighting effect -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+  <div class="mesh-grid" aria-hidden="true"></div>
+
+  <!-- Floating Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="main-nav" aria-label="Navegación principal">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Joel.dev</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#github-suite" class="nav-link highlight">GitHub Tools</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#github-suite" class="btn btn-sm btn-outline">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          README Perfil
+        </a>
+      </div>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">Estudiante & Desarrollador en Constante Aprendizaje</span>
+          </div>
+
+          <h1 class="hero-title">
+            Transformando ideas en código limpio y <span class="gradient-text">soluciones digitales</span>.
+          </h1>
+
+          <p class="hero-description">
+            Hola, soy <strong>Joel</strong>. Apasionado por la tecnología, el desarrollo de software y la creación de experiencias web modernas. Construyo proyectos con curiosidad, buenas prácticas y atención al detalle.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+              Explorar Proyectos
+              <svg class="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">Hablemos</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" id="hero-github-link">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <span class="metric-val" id="count-tech">10+</span>
+              <span class="metric-lbl">Tecnologías exploradas</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-val">100%</span>
+              <span class="metric-lbl">Compromiso y pasión</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-val">24/7</span>
+              <span class="metric-lbl">Curiosidad técnica</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-card-wrapper">
+            <div class="code-card">
+              <div class="code-card-header">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="code-filename">joel_profile.ts</div>
+                <div class="badge-tag">TypeScript</div>
+              </div>
+              <div class="code-body">
+                <pre><code><span class="kw">interface</span> <span class="type">Developer</span> {
+  name: <span class="str">string</span>;
+  role: <span class="str">string</span>;
+  focus: <span class="str">string[]</span>;
+  curious: <span class="bool">boolean</span>;
+}
+
+<span class="kw">const</span> <span class="var">joel</span>: <span class="type">Developer</span> = {
+  name: <span class="str">"Joel"</span>,
+  role: <span class="str">"Software Developer Student"</span>,
+  focus: [
+    <span class="str">"Frontend Architecture"</span>,
+    <span class="str">"Backend Services"</span>,
+    <span class="str">"Clean Code & Performance"</span>
+  ],
+  curious: <span class="bool">true</span>
+};
+
+<span class="comment">// Aprendiendo y construyendo a diario 🚀</span>
+<span class="fn">export default</span> <span class="var">joel</span>;</code></pre>
+              </div>
+            </div>
+            <div class="interactive-tag tag-floating-1">⚡ Clean Code</div>
+            <div class="interactive-tag tag-floating-2">🌱 Continuous Learning</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-badge">Sobre mí</div>
+        <h2 class="section-title">El camino de convertir problemas en software elegante</h2>
+        
+        <div class="about-grid">
+          <div class="about-card glass-card">
+            <div class="card-icon">🎯</div>
+            <h3>Mi Enfoque</h3>
+            <p>
+              Como estudiante de tecnología, me enfoco en entender los fundamentos: cómo funcionan las computadoras, las redes, los algoritmos y la arquitectura web moderna, no solo memorizar herramientas de moda.
+            </p>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="card-icon">⚡</div>
+            <h3>Filosofía de Trabajo</h3>
+            <p>
+              Código legible, arquitecturas escalables y diseño centrado en el usuario. Priorizo la simplicidad y la mantenibilidad sobre la complejidad innecesaria.
+            </p>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="card-icon">🚀</div>
+            <h3>Objetivos Actuales</h3>
+            <p>
+              Colaborar en proyectos de código abierto, perfeccionar el desarrollo Full-Stack, crear interfaces accesibles y publicar herramientas útiles en mi repositorio de GitHub.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tech Stack Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-badge">Stack Tecnológico</div>
+        <h2 class="section-title">Herramientas & Tecnologías</h2>
+        <p class="section-subtitle">Las tecnologías con las que trabajo, experimento y desarrollo soluciones a diario.</p>
+
+        <!-- Skill Filter Tabs -->
+        <div class="skill-tabs" role="tablist">
+          <button class="skill-tab active" data-filter="all" role="tab">Todos</button>
+          <button class="skill-tab" data-filter="frontend" role="tab">Frontend</button>
+          <button class="skill-tab" data-filter="backend" role="tab">Backend & DB</button>
+          <button class="skill-tab" data-filter="tools" role="tab">Herramientas & DevOps</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-icon-wrap" style="--icon-color: #f7df1e;">
+              <span class="tech-icon">JS</span>
+            </div>
+            <div class="skill-info">
+              <h4>JavaScript (ES6+)</h4>
+              <p>Manipulación DOM, Async/Await, lógica modular.</p>
+            </div>
+            <span class="skill-level">Avanzado</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-icon-wrap" style="--icon-color: #3178c6;">
+              <span class="tech-icon">TS</span>
+            </div>
+            <div class="skill-info">
+              <h4>TypeScript</h4>
+              <p>Tipado estático, interfaces, código robusto.</p>
+            </div>
+            <span class="skill-level">Intermedio</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-icon-wrap" style="--icon-color: #61dafb;">
+              <span class="tech-icon">⚛️</span>
+            </div>
+            <div class="skill-info">
+              <h4>React</h4>
+              <p>Hooks, componentes reutilizables, estado reactivo.</p>
+            </div>
+            <span class="skill-level">En Progreso</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-icon-wrap" style="--icon-color: #e34f26;">
+              <span class="tech-icon">HTML</span>
+            </div>
+            <div class="skill-info">
+              <h4>HTML5 & Semántica</h4>
+              <p>Accesibilidad (a11y), SEO técnico, estructura limpia.</p>
+            </div>
+            <span class="skill-level">Dominado</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-icon-wrap" style="--icon-color: #264de4;">
+              <span class="tech-icon">CSS</span>
+            </div>
+            <div class="skill-info">
+              <h4>CSS3 / Modern CSS</h4>
+              <p>Flexbox, Grid, Custom Properties, Glassmorphism.</p>
+            </div>
+            <span class="skill-level">Avanzado</span>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-icon-wrap" style="--icon-color: #68a063;">
+              <span class="tech-icon">Node</span>
+            </div>
+            <div class="skill-info">
+              <h4>Node.js</h4>
+              <p>Servidores HTTP, Express, REST APIs.</p>
+            </div>
+            <span class="skill-level">Intermedio</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-icon-wrap" style="--icon-color: #3776ab;">
+              <span class="tech-icon">Py</span>
+            </div>
+            <div class="skill-info">
+              <h4>Python</h4>
+              <p>Automatización, scripting, estructuras de datos.</p>
+            </div>
+            <span class="skill-level">Intermedio</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-icon-wrap" style="--icon-color: #336791;">
+              <span class="tech-icon">SQL</span>
+            </div>
+            <div class="skill-info">
+              <h4>Bases de Datos (SQL / NoSQL)</h4>
+              <p>Modelado relacional, consultas, MongoDB / PostgreSQL.</p>
+            </div>
+            <span class="skill-level">Intermedio</span>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-icon-wrap" style="--icon-color: #f05032;">
+              <span class="tech-icon">Git</span>
+            </div>
+            <div class="skill-info">
+              <h4>Git & GitHub</h4>
+              <p>Control de versiones, branches, PRs, GitHub Actions.</p>
+            </div>
+            <span class="skill-level">Avanzado</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-icon-wrap" style="--icon-color: #007acc;">
+              <span class="tech-icon">VS</span>
+            </div>
+            <div class="skill-info">
+              <h4>VS Code & Entornos</h4>
+              <p>Configuración de linters, testing, depuración.</p>
+            </div>
+            <span class="skill-level">Dominado</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-icon-wrap" style="--icon-color: #38bdf8;">
+              <span class="tech-icon">API</span>
+            </div>
+            <div class="skill-info">
+              <h4>RESTful APIs & Postman</h4>
+              <p>Integración de endpoints, autenticación, JSON.</p>
+            </div>
+            <span class="skill-level">Avanzado</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-icon-wrap" style="--icon-color: #a855f7;">
+              <span class="tech-icon">🐧</span>
+            </div>
+            <div class="skill-info">
+              <h4>Linux & Terminal</h4>
+              <p>Bash, PowerShell, manejo de scripts y servidores.</p>
+            </div>
+            <span class="skill-level">Intermedio</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-badge">Portafolio</div>
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <p class="section-subtitle">Una muestra de proyectos desarrollados para resolver problemas y aplicar nuevas tecnologías.</p>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass-card">
+            <div class="project-header">
+              <span class="project-badge">Destacado</span>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Ver Repositorio">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-preview preview-gradient-1">
+              <div class="preview-mockup">
+                <span class="preview-tag">⚡ Web App</span>
+                <h3>DevTracker & Notes</h3>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>DevTracker - Gestor de Aprendizaje</h3>
+              <p>Aplicación para registrar horas de práctica, conceptos técnicos dominados y metas de desarrollo con almacenamiento local y métricas gráficas.</p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML5 / CSS3</span>
+                <span class="tag">LocalStorage</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-card">
+            <div class="project-header">
+              <span class="project-badge">API Service</span>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Ver Repositorio">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-preview preview-gradient-2">
+              <div class="preview-mockup">
+                <span class="preview-tag">REST API</span>
+                <h3>Node Task Engine</h3>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>REST API con Node & Express</h3>
+              <p>API modular con endpoints CRUD, validación de datos, control de errores centralizado y persistencia en base de datos relacional.</p>
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">PostgreSQL / SQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card glass-card">
+            <div class="project-header">
+              <span class="project-badge">Open Source</span>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Ver Repositorio">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-preview preview-gradient-3">
+              <div class="preview-mockup">
+                <span class="preview-tag">Automation</span>
+                <h3>CLI Scripts Toolkit</h3>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Kit de Herramientas & Automatización</h3>
+              <p>Scripts en Python y Bash para automatizar rutinas de desarrollo, formateo de archivos y backup de proyectos de código.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Bash</span>
+                <span class="tag">Git Automation</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Suite Section: Live Previewer & Generator -->
+    <section class="section github-suite-section" id="github-suite">
+      <div class="container">
+        <div class="section-badge">Herramienta Interactiva</div>
+        <h2 class="section-title">Personalizador & Vista Previa de tu GitHub</h2>
+        <p class="section-subtitle">
+          Escribe tu usuario exacto de GitHub para generar y probar en tiempo real las estadísticas, badges y el código Markdown de tu perfil profesional.
+        </p>
+
+        <div class="github-tool-box glass-card">
+          <!-- Control Bar -->
+          <div class="tool-controls">
+            <div class="input-group">
+              <label for="github-username-input">Tu Usuario de GitHub:</label>
+              <div class="input-with-button">
+                <span class="input-prefix">github.com/</span>
+                <input type="text" id="github-username-input" value="Joel" placeholder="Ej: TuNombreDeUsuario" autocomplete="off" spellcheck="false">
+                <button type="button" id="btn-update-stats" class="btn btn-sm btn-primary">Actualizar Vista</button>
+              </div>
+            </div>
+            <div class="tool-quick-actions">
+              <button type="button" id="btn-copy-readme" class="btn btn-secondary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span id="copy-btn-text">Copiar Código Markdown</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Tabs: Live Widgets vs Markdown Code -->
+          <div class="preview-tabs">
+            <button class="preview-tab active" id="tab-visual" data-target="panel-visual">Vista Previa Visual de Widgets</button>
+            <button class="preview-tab" id="tab-code" data-target="panel-code">Código Markdown para GitHub</button>
+            <button class="preview-tab" id="tab-guide" data-target="panel-guide">¿Cómo instalar en 3 pasos?</button>
+          </div>
+
+          <!-- Tab 1: Visual Widgets -->
+          <div class="tab-panel active" id="panel-visual">
+            <div class="widgets-live-preview">
+              <div class="widget-row">
+                <div class="widget-col">
+                  <div class="widget-label">Estadísticas Principales</div>
+                  <div class="widget-frame">
+                    <img id="img-stats" src="https://github-readme-stats.vercel.app/api?username=Joel&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=6366f1&icon_color=06b6d4&text_color=e2e8f0" alt="GitHub Stats de Joel" loading="lazy">
+                  </div>
+                </div>
+
+                <div class="widget-col">
+                  <div class="widget-label">Lenguajes Más Usados</div>
+                  <div class="widget-frame">
+                    <img id="img-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Joel&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=6366f1&text_color=e2e8f0" alt="Lenguajes de Joel" loading="lazy">
+                  </div>
+                </div>
+              </div>
+
+              <div class="widget-row single-row">
+                <div class="widget-col full-width">
+                  <div class="widget-label">Racha de Contribuciones (GitHub Streak)</div>
+                  <div class="widget-frame">
+                    <img id="img-streak" src="https://github-readme-streak-stats.herokuapp.com/?user=Joel&theme=tokyonight&hide_border=true&background=0d1117&ring=6366f1&fire=06b6d4&currStreakNum=e2e8f0" alt="GitHub Streak de Joel" loading="lazy">
+                  </div>
+                </div>
+              </div>
+
+              <div class="widget-tip">
+                💡 <em>Nota: Las tarjetas se conectan automáticamente a los servidores públicos de GitHub Stats. Si tu usuario es muy nuevo o no tiene repositorios públicos aún, las métricas comenzarán a contabilizarse conforme hagas tus primeros commits.</em>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Raw Markdown Code -->
+          <div class="tab-panel" id="panel-code">
+            <div class="markdown-preview-container">
+              <div class="code-action-bar">
+                <span>Archivo listo: <code>README.md</code> para tu repositorio especial</span>
+                <button type="button" class="btn btn-sm btn-ghost" id="btn-copy-code-direct">Copiar</button>
+              </div>
+              <pre class="markdown-code-display"><code id="markdown-output">Cargando plantilla...</code></pre>
+            </div>
+          </div>
+
+          <!-- Tab 3: Step by step Guide -->
+          <div class="tab-panel" id="panel-guide">
+            <div class="guide-steps">
+              <div class="step-card">
+                <div class="step-num">1</div>
+                <div class="step-info">
+                  <h4>Crea tu repositorio especial en GitHub</h4>
+                  <p>Ve a <a href="https://github.com/new" target="_blank" rel="noopener noreferrer">github.com/new</a> y crea un nuevo repositorio que se llame <strong>exactamente igual a tu nombre de usuario</strong> (por ejemplo: si tu usuario es <code>JoelDev</code>, el repositorio se debe llamar <code>JoelDev</code>).</p>
+                  <span class="step-badge">⚠️ Debe ser PÚBLICO y marcar "Add a README file"</span>
+                </div>
+              </div>
+
+              <div class="step-card">
+                <div class="step-num">2</div>
+                <div class="step-info">
+                  <h4>Pega el contenido del README</h4>
+                  <p>Abre el archivo <code>README.md</code> de ese nuevo repositorio, dale clic al lápiz para editar, borra lo que haya y pega el código de la pestaña <strong>"Código Markdown"</strong> de arriba.</p>
+                </div>
+              </div>
+
+              <div class="step-card">
+                <div class="step-num">3</div>
+                <div class="step-info">
+                  <h4>Guarda los cambios (Commit)</h4>
+                  <p>Haz clic en <strong>Commit changes</strong>. Al entrar a tu perfil principal (<code>github.com/tu-usuario</code>), verás tu nuevo perfil profesional con banners, badges, stats y enlaces activos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Socials -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-container">
+        <div class="section-badge">Contacto</div>
+        <h2 class="section-title">¿Hablamos o colaboramos en un proyecto?</h2>
+        <p class="section-subtitle">
+          Siempre estoy abierto a aprender de otros desarrolladores, participar en proyectos interesantes y recibir sugerencias.
+        </p>
+
+        <div class="contact-cards">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-github">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="contact-meta">
+              <span class="contact-lbl">GitHub</span>
+              <strong class="contact-val">github.com/Joel</strong>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-linkedin">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </div>
+            <div class="contact-meta">
+              <span class="contact-lbl">LinkedIn</span>
+              <strong class="contact-val">Conectar en LinkedIn</strong>
+            </div>
+          </a>
+
+          <div class="contact-card glass-card clickable-email" id="contact-email-card" role="button" tabindex="0" title="Haz clic para copiar">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-meta">
+              <span class="contact-lbl">Correo Electrónico (Clic para copiar)</span>
+              <strong class="contact-val" id="email-address-text">joel.dev@ejemplo.com</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="current-year">2026</span> <strong>Joel</strong>. Diseñado con pasión y estándares web modernos.</p>
+      <div class="footer-links">
+        <a href="#hero">Subir ↑</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#github-suite">GitHub Profile README</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toast-message">Copiado al portapapeles</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
