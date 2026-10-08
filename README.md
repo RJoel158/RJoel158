@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="./assets/manga_coder_banner.jpg" width="100%" alt="Software Engineer Workspace - Seinen Manga Aesthetic" style="border-radius: 10px; border: 1px solid #30363d;" />
   <br /><br />
   <a href="https://github.com/RJoel158">
     <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=25&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=750&height=70&lines=Hello%2C+I'm+Joel;Software+Engineer+%26+Computer+Science+Student;Full-Stack%2C+AI+Agents+%26+Cross-Platform+Systems;C%23+%7C+TypeScript+%7C+PHP+%2F+Laravel+%7C+Java" alt="Typing Header" />
