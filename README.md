@@ -104,7 +104,7 @@ Focused on high-velocity software engineering: leveraging **multi-agent AI workf
 
 ---
 
-### GitHub Activity & Analytics
+[### GitHub Activity & Analytics
 
 <div align="center">
   <table border="0">
@@ -128,7 +128,7 @@ Focused on high-velocity software engineering: leveraging **multi-agent AI workf
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=RJoel158&theme=github_dark&hide_border=false&border=30363d&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakNum=c9d1d9" alt="GitHub Streak" width="770" />
   </a>
 </div>
-
+](url)
 ---
 
 ### Connect
