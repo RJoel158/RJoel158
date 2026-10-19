@@ -39,7 +39,7 @@ Focused on high-velocity software engineering: leveraging **multi-agent AI workf
 
 ---
 
-### Tech Stack with some projects on it
+### Tech Stack with some xp
 
 #### Core Languages
 <p align="left">
